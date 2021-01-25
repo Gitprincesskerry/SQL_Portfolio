@@ -14,7 +14,7 @@ video_url VARCHAR(255) UNIQUE NOT NULL);
 
 INSERT INTO videos (video_id, video_title, video_length, video_url)
 VALUES ('1','SQL Tutorial - Full Database Course for Beginners', '4:20:38', 'https://www.youtube.com/watch?v=HXV3zeQKqGY&t=2089s'),
-('2','Google Coding Interview With A College Student', '1:05', 'https://www.youtube.com/watch?v=3Q_oYDQ2whs'),
+('2','Google Coding Interview With A College Student', '0:59:56', 'https://www.youtube.com/watch?v=3Q_oYDQ2whs'),
 ('3','Coding Interviews are Broken', '6:03', 'https://www.youtube.com/watch?v=bx3--22D4E4');
 
 --Create and populate Reviewers table.
@@ -38,7 +38,11 @@ video_id INT NOT NULL);
 INSERT INTO reviewers (reviewer_firstname, reviewer_lastname, reviewer_username, rating, review, video_id)
 VALUES ('Jane', 'Doe', 'sqllife48', 4, 'Great but, too long', '1'),
 ('Kay', 'Jones', 'flowerprincess88', 5,'Great advice, thank you for sharing!', '3'),
-('Shane', 'Gayle', 'pythonking30', 5, 'Great analogy to home depot', '3');
+('Shane', 'Gayle', 'pythonking30', 5, 'Great analogy to home depot', '3'),
+('Nego', 'Jovano', 'dataanalticking5', 5, 'Great video! I learned SQL in about 4 hours!', '1'),
+('Harry', 'Smalls', 'powerbilife8', 3, 'Too long', '1'),
+('Dan', 'Small', 'tableaulife7', 5, 'Great video', '2'),
+('Joe', 'Smith', 'excelking67', 5, 'Loved it, I just subscribed', '2');
 
 --Write a JOIN statement that shows information from both tables.
 SELECT r.reviewer_username, r.rating, r.review FROM reviewers r
